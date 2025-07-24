@@ -8,7 +8,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Savor - A Multicuisine Restaurant',
-  description: 'Flavors from around the world, served fine.',
+  description: 'Flavors from around the world, served fine. We host Family Events * Dates * Meeting * Wedding & Celebrations.',
 };
 
 export default function RootLayout({
