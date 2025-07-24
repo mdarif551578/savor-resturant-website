@@ -18,7 +18,7 @@ export default function CareersPage() {
         <div className="max-w-4xl mx-auto space-y-8">
           {careersData.openings.map((job, i) => (
             <div key={job.title} className="animate-fade-in-up" style={{ animationDelay: `${i * 0.15}s` }}>
-              <Card className="shadow-lg hover:shadow-xl transition-shadow text-left">
+              <Card className="shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out text-left">
                 <CardHeader>
                   <CardTitle className="font-headline text-3xl text-primary">{job.title}</CardTitle>
                   <CardDescription className="pt-2 text-base">{job.description}</CardDescription>

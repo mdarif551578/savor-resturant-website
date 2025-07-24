@@ -85,7 +85,7 @@ export default {
         "fade-in-down": {
           "0%": {
             opacity: "0",
-            transform: "translateY(-20px)"
+            transform: "translateY(-10px)"
           },
           "100%": {
             opacity: "1",
@@ -95,7 +95,7 @@ export default {
         "fade-in-up": {
           "0%": {
             opacity: "0",
-            transform: "translateY(20px)"
+            transform: "translateY(10px)"
           },
           "100%": {
             opacity: "1",
@@ -105,7 +105,7 @@ export default {
         "slide-in-from-left": {
           "0%": {
             opacity: "0",
-            transform: "translateX(-30px)"
+            transform: "translateX(-20px)"
           },
           "100%": {
             opacity: "1",
@@ -115,7 +115,7 @@ export default {
         "slide-in-from-right": {
           "0%": {
             opacity: "0",
-            transform: "translateX(30px)"
+            transform: "translateX(20px)"
           },
           "100%": {
             opacity: "1",
@@ -125,7 +125,7 @@ export default {
         "zoom-in": {
           "0%": {
             opacity: "0",
-            transform: "scale(0.95)"
+            transform: "scale(0.9)"
           },
           "100%": {
             opacity: "1",
@@ -136,12 +136,12 @@ export default {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        "fade-in": "fade-in 0.5s ease-out forwards",
-        "fade-in-down": "fade-in-down 0.5s ease-out forwards",
-        "fade-in-up": "fade-in-up 0.5s ease-out forwards",
-        "slide-in-from-left": "slide-in-from-left 0.5s ease-out forwards",
-        "slide-in-from-right": "slide-in-from-right 0.5s ease-out forwards",
-        "zoom-in": "zoom-in 0.3s ease-out forwards",
+        "fade-in": "fade-in 0.6s ease-in-out forwards",
+        "fade-in-down": "fade-in-down 0.6s ease-in-out forwards",
+        "fade-in-up": "fade-in-up 0.6s ease-in-out forwards",
+        "slide-in-from-left": "slide-in-from-left 0.6s ease-in-out forwards",
+        "slide-in-from-right": "slide-in-from-right 0.6s ease-in-out forwards",
+        "zoom-in": "zoom-in 0.4s ease-in-out forwards",
       },
     },
   },

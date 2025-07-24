@@ -48,7 +48,7 @@ export default function AboutPage() {
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {team.members.map((member, i) => (
               <div key={member.name} className="animate-fade-in-up" style={{ animationDelay: `${i * 0.15}s` }}>
-                <Card className="border-0 shadow-lg bg-card overflow-hidden transition-transform duration-300 hover:scale-105">
+                <Card className="border-0 shadow-lg bg-card overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
                   <CardContent className="p-0 text-center flex flex-col items-center pt-6">
                     <div className="w-36 h-36 rounded-full overflow-hidden">
                       <ImageWithOverlay

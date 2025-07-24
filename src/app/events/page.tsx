@@ -21,7 +21,7 @@ export default function EventsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {eventsData.events.map((event, i) => (
             <div key={event.title} className="animate-fade-in-up" style={{ animationDelay: `${i * 0.15}s` }}>
-              <Card className="flex flex-col overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl h-full">
+              <Card className="flex flex-col overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-2xl h-full">
                 <CardHeader className="p-0 h-56">
                   <ImageWithOverlay
                     src={event.image}

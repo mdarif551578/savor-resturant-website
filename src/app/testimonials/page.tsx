@@ -23,7 +23,7 @@ export default function TestimonialsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonialsData.testimonials.map((testimonial, index) => (
              <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-              <Card className="flex flex-col h-full shadow-lg hover:shadow-xl transition-shadow transition-transform hover:scale-105">
+              <Card className="flex flex-col h-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transition-transform hover:scale-105">
                 <CardHeader>
                   <div className="flex items-center">
                     {Array.from({ length: 5 }).map((_, i) => (

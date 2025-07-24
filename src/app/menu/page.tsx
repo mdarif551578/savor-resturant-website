@@ -25,7 +25,7 @@ export default function MenuPage() {
       />
       <div className="container mx-auto py-20">
         <Tabs defaultValue={categories[0]} className="w-full">
-          <TabsList className="flex flex-wrap justify-center gap-2 mb-12 animate-fade-in-up">
+          <TabsList className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-12 animate-fade-in-up">
             {categories.map((category) => (
               <TabsTrigger key={category} value={category} className="transition-transform hover:scale-105">
                 {category}
@@ -37,7 +37,7 @@ export default function MenuPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {getItemsByCategory(category).map((item, i) => (
                    <div key={item.name} className="animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>
-                    <Card className="overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl h-full">
+                    <Card className="overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-2xl h-full">
                       <CardHeader className="p-0 h-64">
                         <ImageWithOverlay
                           src={item.image}

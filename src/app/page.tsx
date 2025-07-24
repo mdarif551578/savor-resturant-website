@@ -25,7 +25,7 @@ export default function Home() {
           objectFit="cover"
           className="absolute inset-0 -z-10"
           imageClassName="bg-black"
-          overlayClassName="bg-gradient-to-t from-black via-black/50 to-black/50"
+          overlayClassName="bg-gradient-to-t from-black via-black/50 to-transparent"
           data-ai-hint="restaurant ambiance"
           priority
         />
@@ -54,7 +54,7 @@ export default function Home() {
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {featuredDishes.map((item, i) => (
               <div key={item.name} className="animate-fade-in-up" style={{ animationDelay: `${i * 0.2 + 0.2}s` }}>
-                <Card className="overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+                <Card className="overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-2xl">
                   <CardHeader className="p-0 h-64">
                     <ImageWithOverlay
                         src={item.image}
@@ -95,7 +95,7 @@ export default function Home() {
                 {testimonials.testimonials.map((testimonial, index) => (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-1">
-                      <Card className="h-full flex flex-col justify-between p-6 text-left shadow-lg transition-transform hover:scale-105">
+                      <Card className="h-full flex flex-col justify-between p-6 text-left shadow-lg transition-all duration-300 ease-in-out hover:scale-105">
                         <div>
                           <div className="flex items-center">
                             {Array.from({ length: 5 }).map((_, i) => (

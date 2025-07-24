@@ -31,7 +31,7 @@ export default function GalleryPage() {
               <Dialog onOpenChange={(open) => !open && setSelectedImage(null)}>
                 <DialogTrigger asChild>
                   <div 
-                    className="overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-transform hover:scale-105 hover:shadow-2xl"
+                    className="overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
                     onClick={() => setSelectedImage(img.src)}
                   >
                       <ImageWithOverlay
