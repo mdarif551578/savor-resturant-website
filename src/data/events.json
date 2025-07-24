@@ -1,0 +1,26 @@
+
+{
+  "events": [
+    {
+      "title": "Wine Tasting Night",
+      "description": "Join us for an exclusive evening of wine tasting. Sample a curated selection of our finest wines from around the world, paired with artisanal cheeses and charcuterie. Our sommelier will guide you through each tasting.",
+      "date": "2023-12-15",
+      "time": "19:00",
+      "image": "https://placehold.co/600x400.png"
+    },
+    {
+      "title": "Jazz & Dinner",
+      "description": "Enjoy a soulful evening of live jazz music while you dine. We're featuring the 'City Lights Trio' for a night of smooth tunes and delicious food. A perfect night out for music and food lovers.",
+      "date": "2023-11-25",
+      "time": "20:00",
+      "image": "https://placehold.co/600x400.png"
+    },
+    {
+      "title": "Seasonal Cooking Class",
+      "description": "Learn the secrets behind our seasonal dishes with a hands-on cooking class led by Chef Anna. You'll learn to prepare a three-course meal and then enjoy your creations with a glass of wine.",
+      "date": "2024-01-20",
+      "time": "11:00",
+      "image": "https://placehold.co/600x400.png"
+    }
+  ]
+}

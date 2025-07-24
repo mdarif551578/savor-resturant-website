@@ -1,0 +1,35 @@
+
+{
+  "testimonials": [
+    {
+      "quote": "The best dining experience I've had in years. The filet mignon was cooked to perfection and the service was impeccable. A true gem!",
+      "name": "Jane Doe",
+      "rating": 5
+    },
+    {
+      "quote": "An absolutely beautiful restaurant with even better food. The ambiance is perfect for a special occasion. We'll definitely be back!",
+      "name": "John Smith",
+      "rating": 5
+    },
+    {
+      "quote": "I came here for a birthday celebration and was blown away. The staff made us feel so special. The chocolate lava cake is a must-try!",
+      "name": "Emily White",
+      "rating": 5
+    },
+    {
+      "quote": "Creative cocktails and delicious appetizers. The tuna tartare was incredibly fresh. A great spot for a date night.",
+      "name": "Michael Brown",
+      "rating": 4
+    },
+    {
+      "quote": "As a vegetarian, I was thrilled with the options. The mushroom risotto was rich and flavorful. It's rare to find a fine dining place that caters so well to herbivores.",
+      "name": "Sarah Green",
+      "rating": 5
+    },
+     {
+      "quote": "The service was a little slow on a busy Saturday night, but the food was worth the wait. The pan-seared scallops were divine.",
+      "name": "David Lee",
+      "rating": 4
+    }
+  ]
+}

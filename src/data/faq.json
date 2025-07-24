@@ -1,0 +1,25 @@
+
+{
+  "faqs": [
+    {
+      "question": "Do you accept reservations?",
+      "answer": "Yes, we highly recommend making a reservation, especially for weekends and holidays. You can book a table through our website's Reservations page or by calling us directly."
+    },
+    {
+      "question": "Do you have vegetarian or vegan options?",
+      "answer": "Absolutely! We have a variety of vegetarian and vegan dishes available. Please check our menu or inform your server of your dietary preferences, and our chefs will be happy to accommodate you."
+    },
+    {
+      "question": "Is there a dress code?",
+      "answer": "We have a smart casual dress code. We kindly ask that you refrain from wearing sportswear, shorts, or flip-flops. We want to create a comfortable yet elegant dining atmosphere for all our guests."
+    },
+    {
+      "question": "Do you offer private dining or event hosting?",
+      "answer": "Yes, we have a private dining room available for special occasions and events. Please visit our Events page or contact us for more information on packages and availability."
+    },
+    {
+      "question": "Is there parking available?",
+      "answer": "We offer complimentary valet parking for our guests. There is also a public parking garage located one block away from the restaurant."
+    }
+  ]
+}

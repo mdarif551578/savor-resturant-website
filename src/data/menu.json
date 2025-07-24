@@ -1,0 +1,76 @@
+
+{
+  "categories": ["Appetizers", "Main Courses", "Desserts", "Drinks"],
+  "items": [
+    {
+      "category": "Appetizers",
+      "name": "Burrata Caprese",
+      "description": "Creamy burrata, heirloom tomatoes, fresh basil, and a balsamic glaze.",
+      "price": 14.99,
+      "image": "https://placehold.co/400x300.png"
+    },
+    {
+      "category": "Appetizers",
+      "name": "Tuna Tartare",
+      "description": "Ahi tuna, avocado, soy-lime dressing, and crispy wontons.",
+      "price": 16.99,
+      "image": "https://placehold.co/400x300.png"
+    },
+     {
+      "category": "Appetizers",
+      "name": "Grilled Octopus",
+      "description": "Tender grilled octopus with a lemon-herb vinaigrette and fingerling potatoes.",
+      "price": 18.99,
+      "image": "https://placehold.co/400x300.png"
+    },
+    {
+      "category": "Main Courses",
+      "name": "Filet Mignon",
+      "description": "8oz center-cut filet, potato gratin, asparagus, and a red wine reduction.",
+      "price": 45.99,
+      "image": "https://placehold.co/400x300.png"
+    },
+    {
+      "category": "Main Courses",
+      "name": "Pan-Seared Scallops",
+      "description": "Jumbo scallops served with a saffron risotto and citrus butter sauce.",
+      "price": 38.99,
+      "image": "https://placehold.co/400x300.png"
+    },
+    {
+      "category": "Main Courses",
+      "name": "Mushroom Risotto",
+      "description": "Creamy Arborio rice with wild mushrooms, parmesan, and truffle oil.",
+      "price": 28.99,
+      "image": "https://placehold.co/400x300.png"
+    },
+    {
+      "category": "Desserts",
+      "name": "Chocolate Lava Cake",
+      "description": "Warm chocolate cake with a molten center, served with raspberry coulis and vanilla ice cream.",
+      "price": 12.99,
+      "image": "https://placehold.co/400x300.png"
+    },
+    {
+      "category": "Desserts",
+      "name": "Classic Tiramisu",
+      "description": "Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder.",
+      "price": 11.99,
+      "image": "https://placehold.co/400x300.png"
+    },
+    {
+      "category": "Drinks",
+      "name": "Old Fashioned",
+      "description": "Bourbon, bitters, sugar, and an orange peel.",
+      "price": 15.00,
+      "image": "https://placehold.co/400x300.png"
+    },
+    {
+      "category": "Drinks",
+      "name": "House Red Wine",
+      "description": "A glass of our carefully selected Cabernet Sauvignon.",
+      "price": 12.00,
+      "image": "https://placehold.co/400x300.png"
+    }
+  ]
+}

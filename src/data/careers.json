@@ -1,0 +1,45 @@
+
+{
+  "openings": [
+    {
+      "title": "Sous Chef",
+      "description": "We are looking for an experienced and passionate Sous Chef to support our Head Chef in a busy kitchen environment. You will be a key part of our culinary team.",
+      "requirements": [
+        "Minimum 3 years of experience in a similar role.",
+        "Excellent cooking skills and knowledge of various techniques.",
+        "Strong leadership and communication skills.",
+        "Ability to work well under pressure."
+      ]
+    },
+    {
+      "title": "Pastry Chef",
+      "description": "Join our team as a creative Pastry Chef. You will be responsible for creating a range of delectable desserts, pastries, and breads.",
+      "requirements": [
+        "Proven experience as a Pastry Chef or similar role.",
+        "Creative and artistic with an eye for detail.",
+        "In-depth knowledge of sanitation principles and food preparation.",
+        "Certificate in culinary arts, pastry-making, or baking is a plus."
+      ]
+    },
+    {
+      "title": "Server / Waitstaff",
+      "description": "We are seeking friendly and professional servers to provide an exceptional dining experience to our guests. Full-time and part-time positions available.",
+      "requirements": [
+        "Previous experience as a server is preferred.",
+        "Excellent customer service and communication skills.",
+        "Knowledge of food and beverage pairings.",
+        "A positive attitude and ability to work in a team."
+      ]
+    },
+     {
+      "title": "Host / Hostess",
+      "description": "Be the first point of contact for our guests. We're looking for a welcoming and organized Host/Hostess to manage reservations and seating.",
+      "requirements": [
+        "Friendly and outgoing personality.",
+        "Excellent organizational and multitasking skills.",
+        "Experience with reservation software is a plus.",
+        "Ability to handle a fast-paced environment with a smile."
+      ]
+    }
+  ]
+}
