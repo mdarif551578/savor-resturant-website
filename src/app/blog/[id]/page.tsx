@@ -5,6 +5,7 @@ import blogData from "@/data/blog.json";
 import { Calendar, User } from "lucide-react";
 import { format } from "date-fns";
 import { Separator } from "@/components/ui/separator";
+import { ImageWithOverlay } from "@/components/shared/image-with-overlay";
 
 export async function generateStaticParams() {
   return blogData.posts.map((post) => ({
@@ -40,7 +41,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
           </header>
           
           <div className="w-full h-96 relative rounded-lg overflow-hidden shadow-lg mb-12">
-            <Image
+            <ImageWithOverlay
               src={post.image}
               alt={post.title}
               layout="fill"

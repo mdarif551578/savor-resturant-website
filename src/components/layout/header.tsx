@@ -19,7 +19,7 @@ export function Header() {
     <Link
       href={href}
       className={cn(
-        "text-sm font-medium transition-colors hover:text-primary",
+        "text-lg font-medium transition-colors hover:text-primary",
         pathname === href ? "text-primary font-bold" : "text-muted-foreground"
       )}
       onClick={() => setIsMenuOpen(false)}
@@ -35,36 +35,31 @@ export function Header() {
           <UtensilsCrossed className="h-6 w-6 text-primary" />
           <span className="font-headline text-xl font-bold">Savor</span>
         </Link>
-        <div className="flex items-center gap-4">
-          <Button asChild className="hidden md:flex bg-primary hover:bg-accent text-primary-foreground font-bold rounded-full">
-              <Link href="/reservations">Reserve a Table</Link>
-          </Button>
-
-          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
+        
+        <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+          <SheetTrigger asChild>
+            <Button variant="ghost" size="icon">
+              <Menu className="h-6 w-6" />
+              <span className="sr-only">Open menu</span>
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="right">
+            <div className="flex flex-col gap-6 p-6">
+              <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
+                <UtensilsCrossed className="h-6 w-6 text-primary" />
+                <span className="font-headline text-xl font-bold">Savor</span>
+              </Link>
+              <nav className="flex flex-col gap-4 mt-4">
+                {navLinks.map((link) => (
+                  <NavLink key={link.href} {...link} />
+                ))}
+              </nav>
+               <Button asChild className="mt-4 bg-primary hover:bg-accent text-primary-foreground font-bold rounded-full">
+                  <Link href="/reservations">Reserve a Table</Link>
               </Button>
-            </SheetTrigger>
-            <SheetContent side="left">
-              <div className="flex flex-col gap-6 p-6">
-                <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
-                  <UtensilsCrossed className="h-6 w-6 text-primary" />
-                  <span className="font-headline text-xl font-bold">Savor</span>
-                </Link>
-                <nav className="flex flex-col gap-4">
-                  {navLinks.map((link) => (
-                    <NavLink key={link.href} {...link} />
-                  ))}
-                </nav>
-                 <Button asChild className="bg-primary hover:bg-accent text-primary-foreground font-bold rounded-full">
-                    <Link href="/reservations">Reserve a Table</Link>
-                </Button>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
     </header>
   );

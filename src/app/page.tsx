@@ -10,6 +10,7 @@ import { Star } from 'lucide-react';
 import menu from '@/data/menu.json';
 import testimonials from '@/data/testimonials.json';
 import { ReservationForm } from '@/components/shared/reservation-form';
+import { ImageWithOverlay } from '@/components/shared/image-with-overlay';
 
 export default function Home() {
   const featuredDishes = menu.items.slice(0, 3);
@@ -20,12 +21,13 @@ export default function Home() {
         <Image
           src="https://placehold.co/1600x900.png"
           alt="Restaurant ambiance"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{objectFit: "cover"}}
           className="absolute inset-0 -z-10"
           data-ai-hint="restaurant ambiance"
+          priority
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/50 to-black/50" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/50 to-transparent" />
         <div className="container mx-auto flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-5xl font-bold md:text-7xl animate-fade-in-down">
             Savor
@@ -51,15 +53,14 @@ export default function Home() {
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {featuredDishes.map((item) => (
               <Card key={item.name} className="overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
-                <CardHeader className="p-0">
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    width={400}
-                    height={300}
-                    className="h-64 w-full object-cover"
-                    data-ai-hint="gourmet food"
-                  />
+                <CardHeader className="p-0 h-64">
+                   <ImageWithOverlay
+                      src={item.image}
+                      alt={item.name}
+                      width={400}
+                      height={300}
+                      data-ai-hint="gourmet food"
+                    />
                 </CardHeader>
                 <CardContent className="p-6">
                   <CardTitle className="font-headline text-2xl">{item.name}</CardTitle>

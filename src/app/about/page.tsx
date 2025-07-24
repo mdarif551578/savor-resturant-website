@@ -1,8 +1,8 @@
 
-import Image from "next/image";
 import { PageHeader } from "@/components/shared/page-header";
 import { Card, CardContent } from "@/components/ui/card";
 import team from "@/data/team.json";
+import { ImageWithOverlay } from "@/components/shared/image-with-overlay";
 
 export default function AboutPage() {
   return (
@@ -27,12 +27,11 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-xl">
-               <Image
+               <ImageWithOverlay
                   src="https://placehold.co/600x800.png"
                   alt="Our Chef"
                   width={600}
                   height={800}
-                  className="w-full h-full object-cover"
                   data-ai-hint="chef portrait"
                 />
             </div>
@@ -46,16 +45,17 @@ export default function AboutPage() {
           <p className="mt-2 text-muted-foreground">The passion and talent behind our creations.</p>
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {team.members.map((member) => (
-              <Card key={member.name} className="border-0 shadow-lg bg-card">
+              <Card key={member.name} className="border-0 shadow-lg bg-card overflow-hidden">
                 <CardContent className="p-0 text-center flex flex-col items-center pt-6">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={150}
-                    height={150}
-                    className="rounded-full object-cover w-36 h-36"
-                    data-ai-hint="professional portrait"
-                  />
+                  <div className="w-36 h-36 rounded-full overflow-hidden">
+                    <ImageWithOverlay
+                      src={member.image}
+                      alt={member.name}
+                      width={150}
+                      height={150}
+                      data-ai-hint="professional portrait"
+                    />
+                  </div>
                   <div className="p-6">
                     <h3 className="font-headline text-xl font-semibold text-foreground">{member.name}</h3>
                     <p className="text-primary">{member.role}</p>

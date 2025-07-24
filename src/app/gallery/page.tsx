@@ -10,7 +10,8 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Card, CardContent } from "@/components/ui/card";
+import { ImageWithOverlay } from "@/components/shared/image-with-overlay";
+
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -30,12 +31,13 @@ export default function GalleryPage() {
                   className="overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-transform hover:scale-105 hover:shadow-2xl"
                   onClick={() => setSelectedImage(img.src)}
                 >
-                    <Image
+                    <ImageWithOverlay
                       src={img.src}
                       alt={img.alt}
                       width={600}
                       height={400}
-                      className="w-full h-auto object-cover"
+                      className="w-full h-auto"
+                      imageClassName="object-cover"
                       data-ai-hint={img.hint}
                     />
                 </div>

@@ -1,11 +1,11 @@
 
-import Image from "next/image";
 import { PageHeader } from "@/components/shared/page-header";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import eventsData from "@/data/events.json";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock } from "lucide-react";
 import { format } from "date-fns";
+import { ImageWithOverlay } from "@/components/shared/image-with-overlay";
 
 export default function EventsPage() {
   return (
@@ -18,13 +18,12 @@ export default function EventsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {eventsData.events.map((event) => (
             <Card key={event.title} className="flex flex-col overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
-              <CardHeader className="p-0">
-                <Image
+              <CardHeader className="p-0 h-56">
+                <ImageWithOverlay
                   src={event.image}
                   alt={event.title}
                   width={400}
                   height={250}
-                  className="w-full h-56 object-cover"
                   data-ai-hint="restaurant event"
                 />
               </CardHeader>

@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import Link from "next/link";
 import { PageHeader } from "@/components/shared/page-header";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import blogData from "@/data/blog.json";
 import { Calendar, User } from "lucide-react";
 import {format} from "date-fns";
+import { ImageWithOverlay } from "@/components/shared/image-with-overlay";
 
 export default function BlogPage() {
   return (
@@ -19,14 +19,13 @@ export default function BlogPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogData.posts.map((post) => (
             <Card key={post.id} className="flex flex-col overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
-              <CardHeader className="p-0">
+              <CardHeader className="p-0 h-56">
                 <Link href={`/blog/${post.id}`}>
-                  <Image
+                  <ImageWithOverlay
                     src={post.image}
                     alt={post.title}
                     width={400}
                     height={250}
-                    className="w-full h-56 object-cover"
                     data-ai-hint="food article"
                   />
                 </Link>
