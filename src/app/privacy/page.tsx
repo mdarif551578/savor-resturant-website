@@ -3,14 +3,14 @@ import { PageHeader } from "@/components/shared/page-header";
 
 export default function PrivacyPolicyPage() {
   return (
-    <div>
+    <div className="animate-fade-in">
       <PageHeader
         title="Privacy Policy"
         imageSrc="https://placehold.co/1600x500.png"
         imageHint="legal document"
       />
       <div className="container mx-auto py-20">
-        <div className="prose prose-lg max-w-4xl mx-auto text-muted-foreground">
+        <div className="prose prose-lg max-w-4xl mx-auto text-muted-foreground animate-fade-in-up">
           <h2>1. Introduction</h2>
           <p>
             Welcome to Savor. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
@@ -24,13 +24,13 @@ export default function PrivacyPolicyPage() {
           <h2>3. How We Use Your Information</h2>
           <p>
             We use the information we collect to:
-            <ul>
-              <li>Process your reservations and requests.</li>
-              <li>Improve our website and services.</li>
-              <li>Communicate with you about promotions and events, with your consent.</li>
-              <li>Comply with legal obligations.</li>
-            </ul>
           </p>
+          <ul>
+            <li>Process your reservations and requests.</li>
+            <li>Improve our website and services.</li>
+            <li>Communicate with you about promotions and events, with your consent.</li>
+            <li>Comply with legal obligations.</li>
+          </ul>
 
           <h2>4. Sharing Your Information</h2>
           <p>
