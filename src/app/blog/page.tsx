@@ -50,7 +50,7 @@ export default function BlogPage() {
                   <CardDescription className="mt-4 text-left">{post.excerpt}</CardDescription>
                 </CardContent>
                 <CardFooter className="p-6 pt-0">
-                  <Button asChild variant="link" className="p-0 h-auto">
+                  <Button asChild variant="link" className="p-0 h-auto transition-transform hover:scale-105">
                     <Link href={`/blog/${post.id}`}>Read More &rarr;</Link>
                   </Button>
                 </CardFooter>

@@ -38,14 +38,14 @@ export function Header() {
         
         <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="transition-transform hover:scale-110">
               <Menu className="h-6 w-6" />
               <span className="sr-only">Open menu</span>
             </Button>
           </SheetTrigger>
           <SheetContent side="right">
-            <SheetHeader>
-               <SheetTitle className="sr-only">Menu</SheetTitle>
+             <SheetHeader>
+               <SheetTitle>Menu</SheetTitle>
             </SheetHeader>
             <div className="flex flex-col gap-6 p-6">
               <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
@@ -57,7 +57,7 @@ export function Header() {
                   <NavLink key={link.href} {...link} />
                 ))}
               </nav>
-               <Button asChild className="mt-4 bg-primary hover:bg-accent text-primary-foreground font-bold rounded-full">
+               <Button asChild className="mt-4 bg-primary hover:bg-accent text-primary-foreground font-bold rounded-full transition-transform hover:scale-105">
                   <Link href="/reservations">Reserve a Table</Link>
               </Button>
             </div>

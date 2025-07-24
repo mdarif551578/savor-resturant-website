@@ -53,7 +53,7 @@ export default function ContactPage() {
                 <div className="flex space-x-4">
                   {socialLinks.map((social) => (
                     <Link key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                        <social.icon className="h-8 w-8" />
+                        <social.icon className="h-8 w-8 transition-transform hover:scale-125" />
                         <span className="sr-only">{social.name}</span>
                     </Link>
                   ))}

@@ -210,7 +210,7 @@ export function ReservationForm() {
               )}
             />
 
-          <Button type="submit" className="w-full text-lg py-6 rounded-full">Book Table</Button>
+          <Button type="submit" className="w-full text-lg py-6 rounded-full transition-transform hover:scale-105">Book Table</Button>
         </form>
       </Form>
   );
