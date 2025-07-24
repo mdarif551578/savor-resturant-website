@@ -44,7 +44,7 @@ export default function BlogPage() {
                     <span>{post.author}</span>
                   </div>
                 </div>
-                <CardDescription className="mt-4">{post.excerpt}</CardDescription>
+                <CardDescription className="mt-4 text-left">{post.excerpt}</CardDescription>
               </CardContent>
               <CardFooter className="p-6 pt-0">
                 <Button asChild variant="link" className="p-0 h-auto">

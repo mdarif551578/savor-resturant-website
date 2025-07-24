@@ -15,7 +15,7 @@ export default function CareersPage() {
       <div className="container mx-auto py-20">
         <div className="max-w-4xl mx-auto space-y-8">
           {careersData.openings.map((job) => (
-            <Card key={job.title} className="shadow-lg hover:shadow-xl transition-shadow">
+            <Card key={job.title} className="shadow-lg hover:shadow-xl transition-shadow text-left">
               <CardHeader>
                 <CardTitle className="font-headline text-3xl text-primary">{job.title}</CardTitle>
                 <CardDescription className="pt-2 text-base">{job.description}</CardDescription>

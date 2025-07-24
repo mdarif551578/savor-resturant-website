@@ -51,7 +51,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
           </div>
 
           <div
-            className="prose prose-lg max-w-none text-muted-foreground mx-auto"
+            className="prose prose-lg max-w-none text-muted-foreground mx-auto text-left"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
