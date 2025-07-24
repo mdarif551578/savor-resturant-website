@@ -16,6 +16,8 @@ export default function ContactPage() {
       <PageHeader
         title="Contact Us"
         subtitle="We'd love to hear from you. Whether it's a question, a reservation, or feedback, get in touch with us."
+        imageSrc="https://placehold.co/1600x500.png"
+        imageHint="restaurant contact"
       />
       <div className="container mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">

@@ -11,6 +11,8 @@ export default function CareersPage() {
       <PageHeader
         title="Join Our Team"
         subtitle="We're looking for passionate individuals to help us create unforgettable dining experiences. Explore our open positions."
+        imageSrc="https://placehold.co/1600x500.png"
+        imageHint="restaurant team"
       />
       <div className="container mx-auto py-20">
         <div className="max-w-4xl mx-auto space-y-8">

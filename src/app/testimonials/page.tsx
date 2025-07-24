@@ -11,6 +11,8 @@ export default function TestimonialsPage() {
       <PageHeader
         title="What Our Guests Are Saying"
         subtitle="We're proud to share the experiences of our valued customers. Your feedback inspires us."
+        imageSrc="https://placehold.co/1600x500.png"
+        imageHint="customer reviews"
       />
       
       <section className="container mx-auto py-20">

@@ -20,6 +20,8 @@ export default function MenuPage() {
       <PageHeader
         title="Our Menu"
         subtitle="A symphony of flavors crafted with the freshest seasonal ingredients."
+        imageSrc="https://placehold.co/1600x500.png"
+        imageHint="gourmet menu"
       />
       <div className="container mx-auto py-20">
         <Tabs defaultValue={categories[0]} className="w-full">

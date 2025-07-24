@@ -6,6 +6,8 @@ export default function PrivacyPolicyPage() {
     <div>
       <PageHeader
         title="Privacy Policy"
+        imageSrc="https://placehold.co/1600x500.png"
+        imageHint="legal document"
       />
       <div className="container mx-auto py-20">
         <div className="prose prose-lg max-w-4xl mx-auto text-muted-foreground">

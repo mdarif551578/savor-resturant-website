@@ -21,6 +21,8 @@ export default function GalleryPage() {
       <PageHeader
         title="Our Gallery"
         subtitle="A glimpse into the ambiance, dishes, and moments that make Culinary Canvas special."
+        imageSrc="https://placehold.co/1600x500.png"
+        imageHint="photo gallery"
       />
       <div className="container mx-auto py-20">
         <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">

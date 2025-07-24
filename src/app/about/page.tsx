@@ -10,6 +10,8 @@ export default function AboutPage() {
       <PageHeader
         title="Our Story"
         subtitle="Crafting memories, one plate at a time."
+        imageSrc="https://placehold.co/1600x500.png"
+        imageHint="restaurant history"
       />
       <section className="py-20">
         <div className="container mx-auto">
