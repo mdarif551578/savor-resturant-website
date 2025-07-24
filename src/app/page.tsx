@@ -28,7 +28,7 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/50 to-black/50" />
         <div className="container mx-auto flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-5xl font-bold md:text-7xl animate-fade-in-down">
-            Savor - A Multicuisine Restaurant
+            Savor
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl animate-fade-in-up">
             Flavors from around the world, served fine. We host Family Events * Dates * Meeting * Wedding & Celebrations.
@@ -38,7 +38,7 @@ export default function Home() {
               <Link href="/menu">View Menu</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-primary font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105">
-              <Link href="/reservations">DM now to reserve your table!</Link>
+              <Link href="/reservations">Message Us</Link>
             </Button>
           </div>
         </div>

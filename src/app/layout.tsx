@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Savor',
+  title: 'Savor - A Multicuisine Restaurant',
   description: 'Flavors from around the world, served fine.',
 };
 
