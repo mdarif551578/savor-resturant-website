@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
         <div className="prose prose-lg max-w-4xl mx-auto text-muted-foreground">
           <h2>1. Introduction</h2>
           <p>
-            Welcome to Culinary Canvas. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
+            Welcome to Savor. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
           </p>
           
           <h2>2. Information We Collect</h2>

@@ -16,18 +16,18 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2">
               <UtensilsCrossed className="h-8 w-8 text-primary" />
-              <span className="font-headline text-2xl font-bold">Culinary Canvas</span>
+              <span className="font-headline text-2xl font-bold">Savor</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
-              Experience the art of fine dining.
+              Flavors from around the world, served fine.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider">Contact</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li>123 Gourmet Lane, Foodie City, 12345</li>
-              <li>(123) 456-7890</li>
-              <li>contact@culinarycanvas.com</li>
+              <li>Level 7, Ahmed & Kazi Tower, Dhanmondi 2, Dhaka, Bangladesh</li>
+              <li>01338-892580</li>
+              <li>savor0525@gmail.com</li>
             </ul>
           </div>
           <div>
@@ -50,7 +50,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Culinary Canvas. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Savor. All rights reserved.</p>
         </div>
       </div>
     </footer>

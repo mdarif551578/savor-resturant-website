@@ -31,16 +31,16 @@ export default function ContactPage() {
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex items-start">
                   <MapPin className="h-6 w-6 text-primary mr-4 mt-1" />
-                  <span>123 Gourmet Lane, Foodie City, 12345</span>
+                  <span>Level 7, Ahmed & Kazi Tower, Dhanmondi 2, Dhaka, Bangladesh</span>
                 </li>
                 <li className="flex items-center">
                   <Phone className="h-6 w-6 text-primary mr-4" />
-                  <span>(123) 456-7890</span>
+                  <span>01338-892580</span>
                 </li>
                 <li className="flex items-center">
                   <Mail className="h-6 w-6 text-primary mr-4" />
-                   <a href="mailto:contact@culinarycanvas.com" className="hover:text-primary transition-colors">
-                    contact@culinarycanvas.com
+                   <a href="mailto:savor0525@gmail.com" className="hover:text-primary transition-colors">
+                    savor0525@gmail.com
                   </a>
                 </li>
               </ul>
@@ -65,7 +65,7 @@ export default function ContactPage() {
             <h2 className="font-headline text-center text-3xl font-bold text-foreground mb-6">Find Us Here</h2>
              <div className="aspect-video w-full rounded-lg overflow-hidden border shadow-lg">
                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.225826848605!2d-122.4194156846813!3d37.77492957975904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c4c7c3b9b%3A0x2d3a1f3da7e1c84f!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1626349320823!5m2!1sen!2sus" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.285848338977!2d90.37523381498114!3d23.73719008459639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b17fc6ff45%3A0x1b373634a34b8c6!2sAhmed%20%26%20Kazi%20Tower!5e0!3m2!1sen!2sbd!4v1678263393198!5m2!1sen!2sbd" 
                     width="100%" 
                     height="100%" 
                     style={{border:0}} 

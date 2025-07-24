@@ -7,8 +7,8 @@ import { cn } from '@/lib/utils';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Culinary Canvas',
-  description: 'A premium, visually stunning restaurant website.',
+  title: 'Savor',
+  description: 'Flavors from around the world, served fine.',
 };
 
 export default function RootLayout({

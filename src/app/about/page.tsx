@@ -15,9 +15,9 @@ export default function AboutPage() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="prose prose-lg max-w-none text-muted-foreground">
-              <h2 className="font-headline text-3xl text-foreground">Welcome to Culinary Canvas</h2>
+              <h2 className="font-headline text-3xl text-foreground">Welcome to Savor</h2>
               <p>
-                Founded in 2015, Culinary Canvas was born from a simple yet powerful idea: to create a dining experience that transcends the ordinary. We believe that food is an art form, and our restaurant is the canvas where our talented chefs paint their masterpieces.
+                Founded in 2015, Savor was born from a simple yet powerful idea: to create a dining experience that transcends the ordinary. We believe that food is an art form, and our restaurant is the canvas where our talented chefs paint their masterpieces.
               </p>
               <p>
                 Our philosophy is rooted in using the finest, locally-sourced ingredients to craft innovative dishes that honor both tradition and modernity. Every element on your plate is thoughtfully chosen and meticulously prepared to create a symphony of flavors, textures, and aromas.

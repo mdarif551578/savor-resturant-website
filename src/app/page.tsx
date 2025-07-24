@@ -27,10 +27,10 @@ export default function Home() {
         />
         <div className="container mx-auto flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-5xl font-bold md:text-7xl animate-fade-in-down">
-            Culinary Canvas
+            Savor
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl animate-fade-in-up">
-            Where every dish is a masterpiece and every meal is an experience.
+            Flavors from around the world, served fine. We host Family Events, Dates, Meetings, Weddings & Celebrations.
           </p>
           <div className="mt-8 flex gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105">

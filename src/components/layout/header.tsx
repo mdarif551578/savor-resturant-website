@@ -33,7 +33,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <UtensilsCrossed className="h-6 w-6 text-primary" />
-          <span className="font-headline text-xl font-bold">Culinary Canvas</span>
+          <span className="font-headline text-xl font-bold">Savor</span>
         </Link>
 
         <nav className="hidden md:flex md:gap-6">
@@ -58,7 +58,7 @@ export function Header() {
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
                   <UtensilsCrossed className="h-6 w-6 text-primary" />
-                  <span className="font-headline text-xl font-bold">Culinary Canvas</span>
+                  <span className="font-headline text-xl font-bold">Savor</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
