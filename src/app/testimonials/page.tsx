@@ -24,7 +24,7 @@ export default function TestimonialsPage() {
               <CardHeader>
                 <div className="flex items-center">
                   {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className={`h-5 w-5 ${i < testimonial.rating ? 'text-accent fill-accent' : 'text-muted'}`} />
+                    <Star key={i} className={`h-5 w-5 ${i < testimonial.rating ? 'text-yellow-400 fill-yellow-400' : 'text-muted'}`} />
                   ))}
                 </div>
               </CardHeader>

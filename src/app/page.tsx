@@ -9,7 +9,7 @@ import { Star } from 'lucide-react';
 
 import menu from '@/data/menu.json';
 import testimonials from '@/data/testimonials.json';
-import { ContactForm } from '@/components/shared/contact-form';
+import { ReservationForm } from '@/components/shared/reservation-form';
 
 export default function Home() {
   const featuredDishes = menu.items.slice(0, 3);
@@ -22,15 +22,16 @@ export default function Home() {
           alt="Restaurant ambiance"
           layout="fill"
           objectFit="cover"
-          className="absolute inset-0 -z-10 brightness-50"
+          className="absolute inset-0 -z-10"
           data-ai-hint="restaurant ambiance"
         />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/50 to-black/50" />
         <div className="container mx-auto flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-5xl font-bold md:text-7xl animate-fade-in-down">
-            Savor
+            Savor - A Multicuisine Restaurant
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl animate-fade-in-up">
-            Flavors from around the world, served fine. We host Family Events, Dates, Meetings, Weddings & Celebrations.
+            Flavors from around the world, served fine. We host Family Events * Dates * Meeting * Wedding & Celebrations.
           </p>
           <div className="mt-8 flex gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105">
@@ -92,7 +93,7 @@ export default function Home() {
                         <div>
                           <div className="flex items-center">
                             {Array.from({ length: 5 }).map((_, i) => (
-                              <Star key={i} className={`h-5 w-5 ${i < testimonial.rating ? 'text-accent fill-accent' : 'text-muted'}`} />
+                              <Star key={i} className={`h-5 w-5 ${i < testimonial.rating ? 'text-yellow-400 fill-yellow-400' : 'text-muted'}`} />
                             ))}
                           </div>
                           <p className="mt-4 text-muted-foreground italic">"{testimonial.quote}"</p>
@@ -112,25 +113,10 @@ export default function Home() {
 
       <section className="py-20 bg-background">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="text-left">
-              <h2 className="font-headline text-4xl font-bold text-foreground">Get in Touch</h2>
-              <p className="mt-4 text-muted-foreground">Have a question or special request? Drop us a line.</p>
-              <div className="mt-6">
-                <ContactForm />
-              </div>
-            </div>
-            <div className="h-96 w-full rounded-lg overflow-hidden shadow-xl">
-              <Image 
-                src="https://placehold.co/600x400.png" 
-                alt="Restaurant interior"
-                width={600}
-                height={400}
-                className="w-full h-full object-cover"
-                data-ai-hint="restaurant interior"
-              />
-            </div>
-          </div>
+           <div className="max-w-2xl mx-auto p-8 bg-card rounded-lg shadow-2xl">
+            <h2 className="font-headline text-3xl font-bold text-foreground mb-6 text-center">Make a Reservation</h2>
+            <ReservationForm />
+           </div>
         </div>
       </section>
     </div>
