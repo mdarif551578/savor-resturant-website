@@ -38,7 +38,7 @@ export default function Home() {
               <Link href="/menu">View Menu</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-primary font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105">
-              <Link href="/reservations">Make a Reservation</Link>
+              <Link href="/reservations">DM now to reserve your table!</Link>
             </Button>
           </div>
         </div>
@@ -77,6 +77,7 @@ export default function Home() {
       <section className="py-20 bg-muted/50">
         <div className="container mx-auto text-center">
           <h2 className="font-headline text-4xl font-bold text-foreground">What Our Guests Say</h2>
+          <p className="text-sm text-muted-foreground mt-2">Not yet rated (1 review)</p>
           <div className="mt-12">
             <Carousel
               opts={{
