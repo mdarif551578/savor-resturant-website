@@ -31,10 +31,12 @@ export default function Home() {
         />
         <div className="container mx-auto flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-5xl font-bold md:text-7xl animate-fade-in-down">
-            Savor
+            Savor - A Multicuisine Restaurant
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl animate-fade-in-up">
-            Flavors from around the world, served fine. We host Family Events * Dates * Meeting * Wedding & Celebrations.
+            Flavors from around the world, served fine.
+            <br />
+            We host Family Events * Dates * Meeting * Wedding & Celebrations.
           </p>
           <div className="mt-8 flex gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
@@ -127,7 +129,7 @@ export default function Home() {
             <div className="animate-slide-in-from-left">
               <div className="aspect-video w-full rounded-lg overflow-hidden border shadow-lg">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.285848338977!2d90.37523381498114!3d23.73719008459639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b17fc6ff45%3A0x1b373634a34b8c6!2sAhmed%20%26%20Kazi%20Tower!5e0!3m2!1sen!2sbd!4v1678263393198!5m2!1sen!2sbd" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d3652.285848338977!2d90.37523381498114!3d23.73719008459639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b17fc6ff45%3A0x1b373634a34b8c6!2sAhmed%20%26%20Kazi%20Tower!5e0!3m2!1sen!2sbd!4v1678263393198!5m2!1sen!2sbd" 
                     width="100%" 
                     height="100%" 
                     style={{border:0}} 
