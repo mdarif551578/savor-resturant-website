@@ -33,7 +33,7 @@ export default function CareersPage() {
                   ))}
                 </ul>
                 <div className="mt-6 text-right">
-                  <Button disabled>Apply Now (Coming Soon)</Button>
+                  <Button as="a" href="mailto:careers@culinarycanvas.com">Apply Now</Button>
                 </div>
               </CardContent>
             </Card>

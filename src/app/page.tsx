@@ -17,13 +17,15 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative h-[80vh] w-full text-white">
+      <section className="relative h-screen w-full text-white">
         <ImageWithOverlay
           src="https://placehold.co/1600x900.png"
           alt="Restaurant ambiance"
           layout="fill"
           objectFit="cover"
           className="absolute inset-0 -z-10"
+          imageClassName="bg-black"
+          overlayClassName="bg-gradient-to-t from-black via-black/50 to-black/50"
           data-ai-hint="restaurant ambiance"
           priority
         />
@@ -36,10 +38,10 @@ export default function Home() {
           </p>
           <div className="mt-8 flex gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105">
-              <Link href="/menu">View Menu</Link>
+              <Link href="/menu">Explore Menu</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-primary font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105">
-              <Link href="/reservations">Message Us</Link>
+              <Link href="/reservations">Book a Table</Link>
             </Button>
           </div>
         </div>
@@ -58,6 +60,7 @@ export default function Home() {
                       alt={item.name}
                       width={400}
                       height={300}
+                      overlayClassName="bg-gradient-to-t from-black/80 via-black/50 to-transparent"
                       data-ai-hint="gourmet food"
                     />
                 </CardHeader>

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock } from "lucide-react";
 import { format } from "date-fns";
 import { ImageWithOverlay } from "@/components/shared/image-with-overlay";
+import Link from "next/link";
 
 export default function EventsPage() {
   return (
@@ -26,6 +27,7 @@ export default function EventsPage() {
                   alt={event.title}
                   width={400}
                   height={250}
+                  overlayClassName="bg-gradient-to-t from-black/80 via-black/50 to-transparent"
                   data-ai-hint="restaurant event"
                 />
               </CardHeader>
@@ -44,7 +46,9 @@ export default function EventsPage() {
                 <CardDescription className="mt-2 text-base">{event.description}</CardDescription>
               </CardContent>
               <div className="p-6 pt-0">
-                <Button className="w-full">Book Your Spot</Button>
+                <Button asChild className="w-full">
+                  <Link href="/reservations">Book Your Spot</Link>
+                </Button>
               </div>
             </Card>
           ))}
