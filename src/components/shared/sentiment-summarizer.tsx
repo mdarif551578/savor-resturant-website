@@ -5,12 +5,12 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { summarizeSentiment } from "@/ai/flows/sentiment-summarizer";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Loader2, Wand2 } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
   reviews: z.string().min(50, "Please enter at least 50 characters of review text."),
@@ -19,7 +19,7 @@ const formSchema = z.object({
 export function SentimentSummarizer() {
   const [summary, setSummary] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -30,15 +30,30 @@ export function SentimentSummarizer() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsLoading(true);
-    setError(null);
     setSummary(null);
 
     try {
-      const result = await summarizeSentiment({ reviews: values.reviews });
+       const response = await fetch('/api/summarize', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error('An error occurred while generating the summary.');
+      }
+
+      const result = await response.json();
       setSummary(result.summary);
-    } catch (e) {
-      console.error(e);
-      setError("An error occurred while generating the summary. Please try again.");
+
+    } catch (e: any) {
+      toast({
+        title: "Error",
+        description: e.message || "An error occurred. Please try again.",
+        variant: "destructive",
+      });
     } finally {
       setIsLoading(false);
     }
@@ -88,8 +103,6 @@ export function SentimentSummarizer() {
           </form>
         </Form>
         
-        {error && <p className="mt-4 text-sm text-destructive">{error}</p>}
-
         {summary && (
           <div className="mt-6">
             <h3 className="font-headline text-xl font-semibold">Summary:</h3>

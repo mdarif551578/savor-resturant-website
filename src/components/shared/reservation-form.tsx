@@ -49,13 +49,33 @@ export function ReservationForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof reservationSchema>) {
-    console.log(values);
-    toast({
-      title: "Reservation Received!",
-      description: `Thank you, ${values.name}. We've received your request and will confirm shortly.`,
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof reservationSchema>) {
+    try {
+       const response = await fetch('/api/reservations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        throw new Error('Something went wrong');
+      }
+
+      toast({
+        title: "Reservation Received!",
+        description: `Thank you, ${values.name}. We've received your request and will confirm shortly.`,
+      });
+      form.reset();
+
+    } catch (error) {
+       toast({
+        title: "Error!",
+        description: "Could not book your reservation. Please try again later.",
+        variant: "destructive"
+      });
+    }
   }
 
   return (
@@ -210,7 +230,9 @@ export function ReservationForm() {
               )}
             />
 
-          <Button type="submit" className="w-full text-lg py-6 rounded-full transition-transform hover:scale-105">Book Table</Button>
+          <Button type="submit" className="w-full text-lg py-6 rounded-full transition-transform hover:scale-105" disabled={form.formState.isSubmitting}>
+             {form.formState.isSubmitting ? 'Booking...' : 'Book Table'}
+          </Button>
         </form>
       </Form>
   );
