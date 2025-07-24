@@ -10,7 +10,7 @@ import faqData from "@/data/faq.json";
 
 export default function FaqPage() {
   return (
-    <div>
+    <div className="animate-fade-in">
       <PageHeader
         title="Frequently Asked Questions"
         subtitle="Find answers to common questions about our restaurant, reservations, and more."
@@ -21,14 +21,16 @@ export default function FaqPage() {
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqData.faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-b">
-                <AccordionTrigger className="text-left font-headline text-xl hover:no-underline">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground pt-2">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+              <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
+                <AccordionItem value={`item-${index}`} className="border-b">
+                  <AccordionTrigger className="text-left font-headline text-xl hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base text-muted-foreground pt-2">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              </div>
             ))}
           </Accordion>
         </div>

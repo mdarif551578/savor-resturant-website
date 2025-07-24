@@ -22,7 +22,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
   }
 
   return (
-    <div className="bg-background">
+    <div className="bg-background animate-fade-in">
       <PageHeader
         title={post.title}
         subtitle={`By ${post.author} on ${format(new Date(post.date), "MMMM d, yyyy")}`}
@@ -32,13 +32,13 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
       <div className="container mx-auto py-20">
         <article className="max-w-4xl mx-auto">
           <div
-            className="prose prose-lg max-w-none text-muted-foreground mx-auto text-left"
+            className="prose prose-lg max-w-none text-muted-foreground mx-auto text-left animate-fade-in-up"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
           <Separator className="my-12" />
 
-          <div className="text-center">
+          <div className="text-center animate-fade-in-up">
             <h3 className="font-headline text-2xl font-semibold">About the Author</h3>
             <p className="mt-2 text-muted-foreground">{post.author}</p>
           </div>

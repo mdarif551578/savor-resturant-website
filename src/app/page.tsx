@@ -37,10 +37,10 @@ export default function Home() {
             Flavors from around the world, served fine. We host Family Events * Dates * Meeting * Wedding & Celebrations.
           </p>
           <div className="mt-8 flex gap-4">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <Link href="/menu">Explore Menu</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-primary font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105">
+            <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-primary font-bold text-lg py-6 px-8 rounded-full transition-transform transform hover:scale-105 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
               <Link href="/reservations">Book a Table</Link>
             </Button>
           </div>
@@ -49,29 +49,31 @@ export default function Home() {
 
       <section className="py-20 bg-background">
         <div className="container mx-auto text-center">
-          <h2 className="font-headline text-4xl font-bold text-foreground">Featured Dishes</h2>
-          <p className="mt-2 text-muted-foreground">A selection of our most loved creations.</p>
+          <h2 className="font-headline text-4xl font-bold text-foreground animate-fade-in-up">Featured Dishes</h2>
+          <p className="mt-2 text-muted-foreground animate-fade-in-up" style={{ animationDelay: '0.1s' }}>A selection of our most loved creations.</p>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {featuredDishes.map((item) => (
-              <Card key={item.name} className="overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
-                <CardHeader className="p-0 h-64">
-                   <ImageWithOverlay
-                      src={item.image}
-                      alt={item.name}
-                      width={400}
-                      height={300}
-                      overlayClassName="bg-gradient-to-t from-black/80 via-black/50 to-transparent"
-                      data-ai-hint="gourmet food"
-                    />
-                </CardHeader>
-                <CardContent className="p-6">
-                  <CardTitle className="font-headline text-2xl">{item.name}</CardTitle>
-                  <CardDescription className="mt-2 text-base">{item.description}</CardDescription>
-                </CardContent>
-                <CardFooter>
-                  <p className="text-xl font-bold text-primary">${item.price.toFixed(2)}</p>
-                </CardFooter>
-              </Card>
+            {featuredDishes.map((item, i) => (
+              <div key={item.name} className="animate-fade-in-up" style={{ animationDelay: `${i * 0.2 + 0.2}s` }}>
+                <Card className="overflow-hidden shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+                  <CardHeader className="p-0 h-64">
+                    <ImageWithOverlay
+                        src={item.image}
+                        alt={item.name}
+                        width={400}
+                        height={300}
+                        overlayClassName="bg-gradient-to-t from-black/80 via-black/50 to-transparent"
+                        data-ai-hint="gourmet food"
+                      />
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    <CardTitle className="font-headline text-2xl">{item.name}</CardTitle>
+                    <CardDescription className="mt-2 text-base">{item.description}</CardDescription>
+                  </CardContent>
+                  <CardFooter>
+                    <p className="text-xl font-bold text-primary">${item.price.toFixed(2)}</p>
+                  </CardFooter>
+                </Card>
+              </div>
             ))}
           </div>
         </div>
@@ -79,9 +81,9 @@ export default function Home() {
 
       <section className="py-20 bg-muted/50">
         <div className="container mx-auto text-center">
-          <h2 className="font-headline text-4xl font-bold text-foreground">What Our Guests Say</h2>
-          <p className="text-sm text-muted-foreground mt-2">Not yet rated (1 review)</p>
-          <div className="mt-12">
+          <h2 className="font-headline text-4xl font-bold text-foreground animate-fade-in-up">What Our Guests Say</h2>
+          <p className="text-sm text-muted-foreground mt-2 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>Not yet rated (1 review)</p>
+          <div className="mt-12 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <Carousel
               opts={{
                 align: "start",
@@ -93,7 +95,7 @@ export default function Home() {
                 {testimonials.testimonials.map((testimonial, index) => (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-1">
-                      <Card className="h-full flex flex-col justify-between p-6 text-left shadow-lg">
+                      <Card className="h-full flex flex-col justify-between p-6 text-left shadow-lg transition-transform hover:scale-105">
                         <div>
                           <div className="flex items-center">
                             {Array.from({ length: 5 }).map((_, i) => (
@@ -117,7 +119,7 @@ export default function Home() {
 
       <section className="py-20 bg-background">
         <div className="container mx-auto">
-           <div className="max-w-2xl mx-auto p-8 bg-card rounded-lg shadow-2xl">
+           <div className="max-w-2xl mx-auto p-8 bg-card rounded-lg shadow-2xl animate-fade-in-up">
             <h2 className="font-headline text-3xl font-bold text-foreground mb-6 text-center">Make a Reservation</h2>
             <ReservationForm />
            </div>

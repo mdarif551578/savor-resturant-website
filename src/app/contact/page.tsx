@@ -12,7 +12,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div>
+    <div className="animate-fade-in">
       <PageHeader
         title="Contact Us"
         subtitle="We'd love to hear from you. Whether it's a question, a reservation, or feedback, get in touch with us."
@@ -22,12 +22,12 @@ export default function ContactPage() {
       <div className="container mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           
-          <div className="lg:col-span-2 bg-card p-8 rounded-lg shadow-lg">
+          <div className="lg:col-span-2 bg-card p-8 rounded-lg shadow-lg animate-slide-in-from-left">
             <h2 className="font-headline text-3xl font-bold text-foreground mb-6">Send Us a Message</h2>
             <ContactForm />
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-8 animate-slide-in-from-right">
             <div className="bg-card p-6 rounded-lg shadow-lg">
               <h3 className="font-headline text-2xl font-bold text-foreground mb-4">Our Details</h3>
               <ul className="space-y-4 text-muted-foreground">
@@ -63,7 +63,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-         <div className="mt-20">
+         <div className="mt-20 animate-fade-in-up">
             <h2 className="font-headline text-center text-3xl font-bold text-foreground mb-6">Find Us Here</h2>
              <div className="aspect-video w-full rounded-lg overflow-hidden border shadow-lg">
                  <iframe 
