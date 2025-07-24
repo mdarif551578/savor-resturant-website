@@ -18,16 +18,15 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <section className="relative h-[80vh] w-full text-white">
-        <Image
+        <ImageWithOverlay
           src="https://placehold.co/1600x900.png"
           alt="Restaurant ambiance"
-          fill
-          style={{objectFit: "cover"}}
+          layout="fill"
+          objectFit="cover"
           className="absolute inset-0 -z-10"
           data-ai-hint="restaurant ambiance"
           priority
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black via-black/50 to-transparent" />
         <div className="container mx-auto flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-5xl font-bold md:text-7xl animate-fade-in-down">
             Savor
