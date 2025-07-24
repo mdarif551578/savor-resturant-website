@@ -35,21 +35,14 @@ export function Header() {
           <UtensilsCrossed className="h-6 w-6 text-primary" />
           <span className="font-headline text-xl font-bold">Savor</span>
         </Link>
-
-        <nav className="hidden md:flex md:gap-6">
-          {navLinks.map((link) => (
-            <NavLink key={link.href} {...link} />
-          ))}
-        </nav>
-
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <Button asChild className="hidden md:flex bg-primary hover:bg-accent text-primary-foreground font-bold rounded-full">
-            <Link href="/reservations">Reserve a Table</Link>
+              <Link href="/reservations">Reserve a Table</Link>
           </Button>
 
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Open menu</span>
               </Button>
