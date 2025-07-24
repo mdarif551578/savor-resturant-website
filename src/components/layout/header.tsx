@@ -7,7 +7,7 @@ import { useState } from "react";
 import { Menu, UtensilsCrossed } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { navLinks } from "@/config/nav";
 
@@ -44,6 +44,9 @@ export function Header() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right">
+            <SheetHeader>
+               <SheetTitle className="sr-only">Menu</SheetTitle>
+            </SheetHeader>
             <div className="flex flex-col gap-6 p-6">
               <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
                 <UtensilsCrossed className="h-6 w-6 text-primary" />
