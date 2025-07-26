@@ -1,14 +1,14 @@
 
 {
   "images": [
-    { "src": "https://placehold.co/600x400.png", "alt": "A beautifully plated dish.", "hint": "plated dish" },
-    { "src": "https://placehold.co/400x600.png", "alt": "A craft cocktail.", "hint": "craft cocktail" },
-    { "src": "https://placehold.co/600x400.png", "alt": "The elegant interior of the restaurant.", "hint": "restaurant interior" },
-    { "src": "https://placehold.co/600x400.png", "alt": "Guests enjoying their meal.", "hint": "people dining" },
-    { "src": "https://placehold.co/400x600.png", "alt": "A decadent chocolate dessert.", "hint": "chocolate dessert" },
-    { "src": "https://placehold.co/600x400.png", "alt": "Our talented chefs in the kitchen.", "hint": "chefs kitchen" },
-    { "src": "https://placehold.co/600x400.png", "alt": "A fresh appetizer.", "hint": "fresh appetizer" },
-    { "src": "https://placehold.co/400x600.png", "alt": "The exterior of the restaurant at night.", "hint": "restaurant exterior" },
-    { "src": "https://placehold.co/600x400.png", "alt": "A selection of fine wines.", "hint": "wine bottles" }
+    { "src": "/item_1.jpg", "alt": "A beautifully plated dish.", "hint": "plated dish" },
+    { "src": "/item_2.jpg", "alt": "A craft cocktail.", "hint": "craft cocktail" },
+    { "src": "/item_3.jpg", "alt": "The elegant interior of the restaurant.", "hint": "restaurant interior" },
+    { "src": "/item_5.jpg", "alt": "Our talented chefs in the kitchen.", "hint": "chefs kitchen" },
+    { "src": "/item_6.jpg", "alt": "A fresh appetizer.", "hint": "fresh appetizer" },
+    { "src": "/item_7.jpg", "alt": "The exterior of the restaurant at night.", "hint": "restaurant exterior" },
+    { "src": "/item_9.jpg", "alt": "A selection of fine wines.", "hint": "wine bottles" },
+    { "src": "/item_4.jpg", "alt": "Guests enjoying their meal.", "hint": "people dining" },
+    { "src": "/item_10.jpg", "alt": "A decadent chocolate dessert.", "hint": "chocolate dessert" }
   ]
 }

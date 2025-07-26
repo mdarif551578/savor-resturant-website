@@ -14,7 +14,7 @@ export default function EventsPage() {
       <PageHeader
         title="Upcoming Events"
         subtitle="Join us for special occasions, from wine tastings to seasonal celebrations."
-        imageSrc="https://placehold.co/1600x500.png"
+        imageSrc="/reservation.jpg"
         imageHint="special events"
       />
       <div className="container mx-auto py-20">

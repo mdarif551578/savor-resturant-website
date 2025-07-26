@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
       <PageHeader
         title="Privacy Policy"
         subtitle={`Last updated on ${lastUpdated}`}
-        imageSrc="https://placehold.co/1600x500.png"
+        imageSrc="reservation.jpg"
         imageHint="legal document"
       />
       <div className="container mx-auto py-20 animate-fade-in-up">

@@ -4,22 +4,22 @@
     {
       "name": "Chef Anna",
       "role": "Executive Chef",
-      "image": "https://placehold.co/400x400.png"
+      "image": "/chef_1.png"
     },
     {
       "name": "David Chen",
       "role": "Head Sommelier",
-      "image": "https://placehold.co/400x400.png"
+      "image": "/chef_2.png"
     },
     {
       "name": "Maria Garcia",
       "role": "General Manager",
-      "image": "https://placehold.co/400x400.png"
+      "image": "/chef_3.png"
     },
     {
       "name": "John Smith",
       "role": "Pastry Chef",
-      "image": "https://placehold.co/400x400.png"
+      "image": "/chef_4.png"
     }
   ]
 }

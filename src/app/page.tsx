@@ -19,7 +19,7 @@ export default function Home() {
     <div className="flex flex-col">
       <section className="relative h-screen w-full text-white">
         <ImageWithOverlay
-          src="https://placehold.co/1600x900.png"
+          src="/hero_bg_2.jpg"
           alt="Restaurant ambiance"
           layout="fill"
           objectFit="cover"
@@ -129,7 +129,7 @@ export default function Home() {
             <div className="animate-slide-in-from-left">
               <div className="aspect-video w-full rounded-lg overflow-hidden border shadow-lg">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d3652.285848338977!2d90.37523381498114!3d23.73719008459639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b17fc6ff45%3A0x1b373634a34b8c6!2sAhmed%20%26%20Kazi%20Tower!5e0!3m2!1sen!2sbd!4v1678263393198!5m2!1sen!2sbd" 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233681.6642218975!2d90.4200192!3d23.773184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b90057b6eedd%3A0x8ac06f2ca7df487f!2sSavor!5e0!3m2!1sen!2sbd!4v1753545127928!5m2!1sen!2sbd" 
                     width="100%" 
                     height="100%" 
                     style={{border:0}} 

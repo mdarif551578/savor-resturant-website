@@ -10,7 +10,7 @@ export default function ReservationsPage() {
       <PageHeader
         title="Make a Reservation"
         subtitle="Book your table for an unforgettable dining experience. We look forward to welcoming you."
-        imageSrc="https://placehold.co/1600x500.png"
+        imageSrc="/reservation.jpg"
         imageHint="restaurant reservation"
       />
       <div className="container mx-auto py-20">

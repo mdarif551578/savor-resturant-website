@@ -14,7 +14,7 @@ export default function FaqPage() {
       <PageHeader
         title="Frequently Asked Questions"
         subtitle="Find answers to common questions about our restaurant, reservations, and more."
-        imageSrc="https://placehold.co/1600x500.png"
+        imageSrc="/reservation.jpg"
         imageHint="questions answers"
       />
       <div className="container mx-auto py-20">

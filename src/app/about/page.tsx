@@ -10,7 +10,7 @@ export default function AboutPage() {
       <PageHeader
         title="Our Story"
         subtitle="Crafting memories, one plate at a time."
-        imageSrc="https://placehold.co/1600x500.png"
+        imageSrc="/us.jpg"
         imageHint="restaurant history"
       />
       <section className="py-20">
@@ -30,7 +30,7 @@ export default function AboutPage() {
             </div>
             <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-xl animate-slide-in-from-right">
                <ImageWithOverlay
-                  src="https://placehold.co/600x800.png"
+                  src="/item_2.jpg"
                   alt="Our Chef"
                   width={600}
                   height={800}

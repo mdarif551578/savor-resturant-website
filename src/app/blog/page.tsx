@@ -14,7 +14,7 @@ export default function BlogPage() {
       <PageHeader
         title="From Our Kitchen"
         subtitle="Stories, tips, and news from the heart of Culinary Canvas."
-        imageSrc="https://placehold.co/1600x500.png"
+        imageSrc="/reservation.jpg"
         imageHint="food blog"
       />
       <div className="container mx-auto py-20">

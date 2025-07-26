@@ -10,7 +10,7 @@ interface PageHeaderProps {
   imageHint?: string;
 }
 
-export function PageHeader({ title, subtitle, className, imageSrc = "https://placehold.co/1600x500.png", imageHint = "restaurant detail" }: PageHeaderProps) {
+export function PageHeader({ title, subtitle, className, imageSrc = "/reservation.jpg", imageHint = "restaurant detail" }: PageHeaderProps) {
   return (
     <section className={cn("relative text-center text-white h-[40vh] flex items-center justify-center", className)}>
        <ImageWithOverlay
